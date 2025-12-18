@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import h2 from "./style.css"
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <table border="1">
+      <th>Product</th>
+      <th>Price</th>
+      <tr>
+        <td>React</td>
+        <td>320</td>
+      </tr>
+      <tr>
+        <td>React Native</td>
+        <td>340</td>
+      </tr>
+    </table>
   );
 }
 
