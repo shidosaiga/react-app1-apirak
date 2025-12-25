@@ -2,10 +2,14 @@
 // import "./style.css";
 import "./App.css";
 import { Content, Header,Footer} from './func-components'
+import Calendar from './class-components'
 function App() {
 
   return (
-    <><Header></Header><Content></Content><Footer></Footer></>
+    <><Header/>
+    <p><center><Calendar/></center></p>
+    <Content/>
+    <Footer/></>
     
   );
     
