@@ -2,7 +2,8 @@
 // import "./style.css";
 import "./App.css";
 import { Content, Header,Footer} from './func-components'
-import Button from './class-components'
+// import Button from './class-components'
+import {Calculator2} from './calculator'
 function App() {
 
   // return (
@@ -12,8 +13,8 @@ function App() {
   //   <Footer/></>
     
   // );
-  return <Button/> 
-    
+  // return <Button/> 
+  return <Calculator2/> 
 }
 
 export default App;
