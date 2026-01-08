@@ -4,6 +4,7 @@ import "./App.css";
 import { Content, Header,Footer} from './func-components'
 // import Button from './class-components'
 import {Calculator2} from './calculator'
+import {EventData2} from './event-data'
 function App() {
 
   // return (
@@ -14,7 +15,8 @@ function App() {
     
   // );
   // return <Button/> 
-  return <Calculator2/> 
+  // return <Calculator2/> 
+  return <EventData2/>
 }
 
 export default App;
