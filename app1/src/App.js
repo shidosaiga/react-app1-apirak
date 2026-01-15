@@ -7,6 +7,7 @@ import {Calculator2} from './calculator'
 import {EventData2} from './event-data'
 import RefsFunc from './refs-class'
 import RefArray from './refs-array'
+import MessageBox from './state-func'
 function App() {
 
   // return (
@@ -18,7 +19,7 @@ function App() {
   // );
   // return <Button/> 
   // return <Calculator2/> 
-  return <RefArray/>
+  return <MessageBox/>
 }
 
 export default App;
