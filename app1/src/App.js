@@ -5,6 +5,7 @@ import { Content, Header,Footer} from './func-components'
 // import Button from './class-components'
 import {Calculator2} from './calculator'
 import {EventData2} from './event-data'
+import RefsFunc from './refs-class'
 function App() {
 
   // return (
@@ -16,7 +17,7 @@ function App() {
   // );
   // return <Button/> 
   // return <Calculator2/> 
-  return <EventData2/>
+  return <RefsFunc/>
 }
 
 export default App;
