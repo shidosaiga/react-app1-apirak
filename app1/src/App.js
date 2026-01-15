@@ -6,6 +6,7 @@ import { Content, Header,Footer} from './func-components'
 import {Calculator2} from './calculator'
 import {EventData2} from './event-data'
 import RefsFunc from './refs-class'
+import RefArray from './refs-array'
 function App() {
 
   // return (
@@ -17,7 +18,7 @@ function App() {
   // );
   // return <Button/> 
   // return <Calculator2/> 
-  return <RefsFunc/>
+  return <RefArray/>
 }
 
 export default App;
