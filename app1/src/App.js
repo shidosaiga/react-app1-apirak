@@ -9,8 +9,10 @@ import RefsFunc from './refs-class'
 import RefArray from './refs-array'
 import MessageBox from './state-func'
 import {userContext} from './context'
-import Content  from './context-content'
-
+// import Content  from './context-content'
+import Header2 from './context-header2'
+import Content2 from './context-content2'
+import React from "react";
 function App() {
 
   // return (
@@ -22,9 +24,11 @@ function App() {
   // );
   // return <Button/> 
   // return <Calculator2/> 
+  let [user, setUser] = React.useState()
   return (
-    <userContext.Provider value = {'apirak'}>
-      <Content/>
+    <userContext.Provider value = {[user,setUser]}>
+      <Header2/>  
+      <Content2/>
     </userContext.Provider>
   )
 }
