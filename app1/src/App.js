@@ -1,3 +1,4 @@
+import React from "react";
 // import logo from "./logo.svg";
 // import "./style.css";
 import "./App.css";
@@ -9,10 +10,12 @@ import RefsFunc from './refs-class'
 import RefArray from './refs-array'
 import MessageBox from './state-func'
 import {userContext} from './context'
+import "./navlink.css"
 // import Content  from './context-content'
 import Header2 from './context-header2'
 import Content2 from './context-content2'
-import React from "react";
+
+import Router2 from "./router2";
 function App() {
 
   // return (
@@ -23,6 +26,7 @@ function App() {
     
   // );
   // return <Button/> 
+  return <Router2/> 
   // return <Calculator2/> 
   let [user, setUser] = React.useState()
   return (
