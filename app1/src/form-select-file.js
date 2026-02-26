@@ -15,7 +15,7 @@ export default function FormSelectFile() {
             return
         } for (let f of inputFile.current.files) {
             if (f.size > maxSize * 1000) {
-                alert(`ขนานของแต่ไฟล์ต้องไม่เกิน ${maxSize} KB`)
+                alert(`ขนานของแต่ละไฟล์ต้องไม่เกิน ${maxSize} KB`)
                 return
             }
         }
@@ -28,7 +28,7 @@ export default function FormSelectFile() {
             <form>
                 <div className="form-group mb-3">
                     <label htmlFor="maxNumFiles" className="form-label">จำนวนไฟล์สูงสุด</label>
-                    <select id="maxNumfiles" className="form-select form-select-sm" ref={selectMaxNumFiles}>
+                    <select id="maxNumFiles" className="form-select form-select-sm" ref={selectMaxNumFiles}>
                         {
                             maxNumfiles.map(i => {
                                 return <option value={i}>{i}</option>
@@ -38,8 +38,8 @@ export default function FormSelectFile() {
                 </div>
                 <div className="form-group mb-3"></div>
                 <div className="form-group mb-3">
-                    <label htmlFor="maxSize" className="form-label">ขนาดไฟล์สูงสุด (KB)</label>
-                    <select id="maxSizes" className="form-select form-select-sm" ref={selectMaxSize}>
+                    <label htmlFor="maxFileSize" className="form-label">ขนาดไฟล์สูงสุด (KB)</label>
+                    <select id="maxFileSize" className="form-select form-select-sm" ref={selectMaxSize}>
                         {
                             maxSizes.map(i => {
                                 return <option value={i}>{i}</option>
